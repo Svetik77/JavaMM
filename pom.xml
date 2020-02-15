@@ -31,5 +31,27 @@
 			</plugins>
 		</pluginManagement>
 	</build>
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/junit/junit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.0</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<distributionManagement>
+		<repository>
+			<id>nexus</id>
+			<name>Releases</name>
+			<url>http://localhost:8081/repository/maven-releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus</id>
+			<name>Snapshot</name>
+			<url>http://localhost:8081/repository/maven-snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 </project>
